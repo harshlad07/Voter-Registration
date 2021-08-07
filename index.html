@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Registreation</title>
+    <style>
+        * {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            /* line-height: 23.5px; */
+            width: 105%;
+        }
+
+        .header {
+            width: 89%;
+            margin-top: -60px;
+            font-size: 1.5rem;
+            padding: 10px;
+            color: white;
+            background-color: rgb(42, 43, 43);
+            display: flex;
+            text-align: center;
+        }
+
+        .header img {
+            border-radius: 35px;
+            margin-top: 57px;
+            height: 137px;
+            width: 239px;
+        }
+
+        #h1 {
+            font-size: 50px;
+            margin-top: 45px;
+            margin-left: 32px;
+        }
+
+        #h2 {
+            font-size: 40px;
+            margin-top: 48px;
+            margin-left: 7px;
+        }
+
+        .header2 {
+            margin-top: 6px;
+            border: 1px solid black;
+            border-radius: 9px;
+            width: 100%;
+            /* padding: 8px; */
+            padding-top: 18px;
+            padding-bottom: 22px;
+        }
+
+        button {
+            border-radius: 15px;
+            /* border-block-color: blue; */
+            background-color: gray;
+            font-size: 20px;
+            width: 83px;
+            height: 31px;
+            margin-left: 96px;
+        }
+
+        .header2 label {
+            margin-left: 802px;
+            font-size: 22px;
+        }
+
+        #lang {
+            font-size: 18px;
+            width: 100px;
+            height: 30px;
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            color: brown;
+            margin-left: 98px;
+            font-weight: 1;
+            padding-top: 10px;
+        }
+
+        .mainbox {
+            line-height: 45px;
+            /* max-width: 1140px; */
+            width: 79%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        #mainbox {
+            background-color: rgb(238, 238, 238);
+            margin: 5px;
+            padding: 5px;
+            margin-left: 80px;
+            margin-right: 80px;
+            border: solid 0.5px gray;
+        }
+
+        .box1 {
+            border-radius: 7px;
+            background-color: rgb(199, 197, 197);
+            width: 97%;
+            padding: 10px;
+            /* border: 2px solid rebeccapurple; */
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: -9px;
+        }
+
+        .box2 {
+            border-radius: 8px;
+            width: 97%;
+            background-color: rgb(224, 171, 157);
+            padding: 10px;
+            /* border: 2px solid rebeccapurple; */
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        #state,
+        #district,
+        #LA,
+        #UT {
+            background-color: gray;
+            width: 150px;
+        }
+
+        .ERO,
+        .service {
+            margin-left: 12px;
+        }
+
+        .s {
+            margin-left: 8px;
+        }
+
+        #LA {
+            margin-left: 35px;
+        }
+
+        #vt {
+            margin-left: -640px;
+        }
+
+        #vt2 {
+            margin-left: -645px;
+        }
+
+        .box3 {
+            margin-left: 140px;
+        }
+
+        .box4,
+        .box6,
+        .box8,
+        .box10,
+        .box12 {
+            border-radius: 8px;
+            font-size: 22px;
+            width: 97%;
+            padding: 10px;
+            /* border: 2px solid rebeccapurple; */
+            background-color: rgb(224, 171, 157);
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        .txt {
+            text-align: center;
+            width: 120px;
+            height: 15px;
+            margin: 10px;
+        }
+
+        .name {
+            margin: 10px;
+        }
+
+        .box5 {
+            width: 89%;
+            /* border: 2px solid red; */
+            margin-left: 127px;
+        }
+
+        /* .box6{
+            width: 97%;
+            padding: 10px;
+            border: 2px solid rebeccapurple;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        } */
+        .box7,
+        .box9,
+        .box11,
+        .box13,
+        .box14,
+        .box15 {
+            width: 89%;
+            /* border: 2px solid red; */
+            margin-left: 127px;
+        }
+
+        hr {
+            width: 100%;
+        }
+
+        /* .cb {
+            margin-left: -702px;
+            margin-right: -715px;
+        } */
+
+        #smt {
+            margin-left: -605px;
+        }
+
+        .box15 {
+            display: flex;
+        }
+
+        .box15_1 img {
+            margin-left: -300px;
+            width: 140px;
+        }
+
+        .rs {
+            font-size: 15px;
+            border-radius: 10px;
+            background-color: green;
+            width: 100px;
+        }
+
+        .rs:hover {
+            background-color: yellow;
+        }
+
+        .box16 {
+            text-align: center;
+        }
+
+        .box9_1 {
+            display: flex;
+        }
+
+        .ft {
+            margin-left: -175px;
+            text-align: center;
+            height: 50px;
+            padding-top: 28px;
+            background-color: rgb(7, 7, 7);
+            color: darkgray;
+        }
+
+        .hre {
+            padding-top: 10px;
+            padding-right: -26px;
+            padding-left: 128px;
+            padding-bottom: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="i1.png" alt="error">
+        <h1 id="h1">राष्ट्रीय मतदान सेवा डेमो पोर्टल</h1>
+        <h1 id="h2">NATIONAL VOTERS' SERVICES DEMO PORTAL</h1>
+        <img src="i2.png" alt="error">
+    </div>
+
+    <div class="header2">
+        <button>A+</button>
+        <button>A-</button>
+        <label for="Select">Select Language : </label>
+        <select name="Language" id="lang">
+            <option value="Hindi">Hindi</option>
+            <option value="English">English</option>
+        </select>
+    </div>
+
+    <h3>Note: Fields marked with ("<b style="color:rgb(255, 8, 8)">*</b>") are mandatory</h3>
+
+    <div class="mainbox" id="mainbox">
+
+        <div class="box1">
+            <b>
+                <p>Type 6</p>
+                <p>[See rule 13(1) and 26]</p>
+            </b>
+        </div>
+
+        <div class="box2">
+            <b>
+                <p>Application for inclusion of name in the electoral roll for the first time due to the transfer of
+                    voter or any other constituency from any one constituency</p>
+            </b>
+        </div>
+
+        <p class="service">In service</p>
+        <p class="ERO">Electoral Registration Officer,</p>
+
+        <div class="select">
+            <label class="s" for="state">State<sup style="color: red;">*</sup></label>
+            <select name="State" id="state">
+                <option value="Select">Select</option>
+                <option value="Gujarat">Gujarat</option>
+            </select>
+            <label class="s" for="District">District</label>
+            <select name="District" id="district">
+                <option value="Select">Select</option>
+                <option value="Valsad">Valsad</option>
+            </select>
+            <!-- <select name="District" id="district">
+                <option value="Select">Select</option>
+                <option value="Valsad">Valsad</option>
+            </select> -->
+        </div>
+        <label class="s" for="LA">Legislative Assembly/Parlimentary
+            constituency <sup style="color: red;">*</sup></label>
+        <select name="LA" id="LA">
+            <option value="abc">abc</option>
+        </select>
+
+        <p class="ERO">I request that my name be included in electoral rolls for all the aforesaid areas.</p>
+        <div class="box3">
+            First time voter<input id="vt" type="radio" name="Voter"><br>
+            Due to transfer from other meeting areas <input id="vt2" type="radio" name="Voter">
+        </div>
+        <br>
+        <br>
+
+        <p class="ERO">Below are specifications in support of my claim to be included in the electoral rolls.</p>
+
+        <div class="box4">
+            <b>
+                <p>Mandatory specifications</p>
+            </b>
+        </div>
+
+        <div class="box5">
+            <p class="name">(A)Name <sup style="color: red;">*</sup> <input placeholder="(In English)" class="txt"
+                    type="text"><input placeholder="(In Regional)" class="txt" type="text"></p>
+            <p class="name">(B)Surname (if any) <sup style="color: red;">*</sup> <input placeholder="(In English)"
+                    class="txt" type="text"><input placeholder="(In Regional)" class="txt" type="text"></p>
+            <p class="name">(C)Name of the applicant's relative <sup style="color: red;">*</sup> <input
+                    placeholder="(In English)" class="txt" type="text"><input placeholder="(In Regional)" class="txt"
+                    type="text"></p>
+            <p class="name">Nickname of the applicant's relative <sup style="color: red;">*</sup> <input
+                    placeholder="(In English)" class="txt" type="text"><input placeholder="(In Regional)" class="txt"
+                    type="text"></p>
+            <p class="name">(D) Type of the relationship <sup style="color: red;">*</sup>
+                <select name="District" id="district">
+                    <option value="Select">Select</option>
+                    <option value="Valsad">Married</option>
+                    <option value="Valsad">Not Married</option>
+                </select>
+            </p>
+            <p class="name">(E) Age [on January 1 of the current calender] <sup style="color: red;">*</sup><input
+                    placeholder="(In Regional)" class="txt" type="date"></p>
+            <p class="name">(F) Applicant's gender <sup style="color: red;">*</sup>
+                <select name="District" id="district">
+                    <option value="Select">Male</option>
+                    <option value="Valsad">Female</option>
+                    <option value="Valsad">Other</option>
+                </select>
+            </p>
+        </div>
+
+        <div class="box6">
+            <b>
+                <p>(H) Current address, whose applicant is nominally resident</p>
+            </b>
+        </div>
+
+        <div class="box7">
+            <p class="name">House no. <sup style="color: red;">*</sup> <input placeholder="(In English)" class="txt"
+                    type="text"><input placeholder="(In Regional)" class="txt" type="text"></p>
+            <p class="name">Street / area / location <sup style="color: red;">*</sup> <input placeholder="(In English)"
+                    class="txt" type="text"><input placeholder="(In Regional)" class="txt" type="text"></p>
+            <p class="name">City / Village: <sup style="color: red;">*</sup> <input placeholder="(In English)"
+                    class="txt" type="text"><input placeholder="(In Regional)" class="txt" type="text"></p>
+            <p class="name">Post Office: <sup style="color: red;">*</sup> <input placeholder="(In English)" class="txt"
+                    type="text"><input placeholder="(In Regional)" class="txt" type="text"></p>
+            <p class="name">Pin Code <sup style="color: red;">*</sup><input class="txt" type="text"></p>
+            <p class="name">State / Union Territory <sup style="color: red;">*</sup>
+                <select name="UT" id="UT">
+                    <option value="select">Select</option>
+                </select>
+            </p>
+            <p class="name">District <sup style="color: red;">*</sup>
+                <select name="District" id="district">
+                    <option value="select">Select</option>
+                </select>
+            </p>
+        </div>
+        <hr>
+        <div class="hre">
+            <p class="name">Family / Neighbour Epic No. <sup style="color: red;">*</sup><input class="txt" type="text">
+            </p>
+        </div>
+        <hr>
+
+        <div class="box8">
+            <b>
+                <p>Optional specialties</p>
+            </b>
+        </div>
+
+        <div class="box9">
+            (T) Disability (if any)<input class="txt" type="text">
+            <!-- <div class="box9_1">
+                <input style="margin-left: -93px;" class="cb" type="checkbox">Visual impariment
+                <input style="margin-left: -93px;" class="cb" type="checkbox">Speech and hearing impairment
+                <input style="margin-left: -93px;" class="cb" type="checkbox">Motion disabling
+                <input style="margin-left: 210px;" class="cb" type="checkbox">Other
+                <input style="width: 111px; margin-left: 15px;" type="text">
+            </div> -->
+            <p>Email ID (optional)<input style="width: 111px; margin-left: 15px;" type="text"></p>
+            <p>Mobile number (optional)<input placeholder="+91" style="width: 120px; margin-left: 15px;" type="text">
+            </p>
+        </div>
+
+        <div class="box10">
+            <b>
+                <p>Upload supporting documents (Supported formats .jpg, .png, .bmp, .jpeg) (max. 2MB) <a
+                        style="margin-left: 50px;" href="#">List Of Required Document</a></p>
+            </b>
+        </div>
+
+        <div class="box11">
+            <p class="name">Your Photo<sup style="color: red;">*</sup>
+            <form action="/action_page.php">
+                <input style="border: 1px solid black; width: 190px;" type="file" id="myFile" name="filename">
+            </form>
+            <p class="name">Age Proof <sup style="color: red;">*</sup>
+            <form action="/action_page.php">
+                <input style="border: 1px solid black; width: 190px;" type="file" id="myFile" name="filename">
+                <p class="name">
+            </form>
+            <p class="name">Address Proof <sup style="color: red;">*</sup>
+            <form action="/action_page.php">
+                <input style="border: 1px solid black; width: 190px;" type="file" id="myFile" name="filename">
+            </form>
+        </div>
+
+        <div class="box12">
+            <b>
+                <p>Declaration</p>
+            </b>
+        </div>
+
+        <p style="margin-left: 12px;"> I declare I declare that according to my best knowledge and belief</p>
+        <p style="margin-left: 12px;">I am a citizen of India and of my birth;</p>
+
+        <div class="box13">
+            <p class="name">City / Village: <sup style="color: red;">*</sup><input class="txt" type="text"></p>
+            <label class="s" for="state">State<sup style="color: red;">*</sup></label>
+            <select name="State" id="state">
+                <option value="Select">Select</option>
+                <option value="Gujarat">Gujarat</option>
+            </select>
+            <label class="s" for="District">District</label>
+            <select name="District" id="district">
+                <option value="Select">Select</option>
+                <option value="Valsad">Valsad</option>
+            </select>
+            <p class="name">Date<sup style="color: red;">*</sup><input class="txt" type="date"></p>
+        </div>
+        <p style="margin-left: 12px;">(ii) I am a nominally resident in the address given in the above (date, month,
+            year) above;</p>
+        <p style="margin-left: 12px;">
+            (iii) I have not applied to include my name in the electoral roll for any other constituency;
+        </p>
+
+        <!-- <input id="abc" type="radio" name="Voter"><br>(iv)My name has not been already included in the electoral roll
+        for this or any other assembly / parliamentary constituency
+        <input id="vt2" type="radio" name="Voter">My name would have been included in electoral rolls of the State's
+        constituency, in which I was already residing in the address mentioned below, and if so, then I request that it be removed from that electoral roll. Go. -->
+
+        My name has not been already included in the electoral roll for this <br>
+        or any other assembly / parliamentary constituency<input id="smt" type="radio" name="Voter">
+        <br>
+
+
+        <b><strong>OR</strong></b>
+
+        <br>
+        <p style="style=margin-left: 12px;">My name would have been included in electoral rolls of the State's
+            constituency, in which I was already residing
+            in the address mentioned below and if so, then I request that it be</p>
+         removed from that electoral roll. Go.<input id="smt" type="radio"
+            name="Voter">
+
+        <hr>
+        <div class="box14">
+            <p class="name">Location<sup style="color: red;">*</sup><input class="txt" type="text"><input class="txt "
+                    type="date"></p>
+        </div>
+
+        <p>I am afraid that the statement or declaration, which is false, to whom I know it or believe that it is false
+            or I do not believe in being true, the People's Representation Act, 1950  (43
+        <p><span></p> of 1950) Is punishable under section 31</p></span>
+        
+
+        <div class="box15">
+            <p class="name">Captcha <sup style="color: red;">*</sup>
+            <div class="box15_1">
+                <img src="i3.png" alt="captcha">
+            </div>
+            <div class="box_15_2">
+                <input style="margin-left: -490px;" class="txt" type="text">
+            </div>
+        </div>
+        <br>
+        <div class="box16">
+            <input class="rs" type="reset">
+            <input style="margin-left: 35px;" class="rs" type="submit">
+        </div>
+
+    </div>
+    <br><br>
+    <div class="ft">
+        <footer>Copyright © 2019 Suven Consultants and Technology Pvt. Ltd.</footer>
+    </div>
+</body>
+
+</html>
